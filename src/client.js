@@ -9,6 +9,16 @@
       .then(success);
   }
 
+  function getMessages(success){
+    return fetch('http://localhost:3001/api/messages', {
+      headers: {
+        Accept: 'application/json',
+      },
+    }).then(checkStatus)
+      .then(parseJSON)
+      .then(success);
+  }
+
   function postChannel(userInitiator, userTarget, success){
   }
 
@@ -28,4 +38,4 @@
     return response.json();
   }
 
-  export { getUsers }
+  export { getUsers, getMessages }

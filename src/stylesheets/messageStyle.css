@@ -1,0 +1,17 @@
+.message {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.message-body {
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.message-time {
+    font-size: 5px;
+    bottom: 0;
+    right: 0;
+}
